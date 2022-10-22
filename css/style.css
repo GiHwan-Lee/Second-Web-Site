@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 #a {
   background-repeat: no-repeat;
   background-position: center;
