@@ -2,6 +2,8 @@ const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector("#todo-input");
 const todoUl = document.querySelector("#todo-ul");
 
+todoInput.setAttribute("size", todoInput.getAttribute("placeholder").length);
+
 let localArray = [];
 
 function deleteTodo(event) {
@@ -27,6 +29,7 @@ function forId(userTodo) {
 function painting(todoObject) {
   const todoLI = document.createElement("li");
   const todoSpan = document.createElement("span");
+  todoSpan.classList = "todo-text";
   const todoButton = document.createElement("button");
   todoButton.addEventListener("click", deleteTodo);
 

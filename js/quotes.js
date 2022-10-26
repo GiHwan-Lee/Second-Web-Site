@@ -51,6 +51,7 @@ const quotes = [
 const quotesNum = Math.floor(Math.random() * quotes.length);
 
 const divElement = document.createElement("div");
+divElement.classList = "quotesClass";
 const setQuotes = document.createElement("span");
 const setAuthor = document.createElement("span");
 
@@ -58,5 +59,5 @@ document.body.appendChild(divElement);
 divElement.appendChild(setQuotes);
 divElement.appendChild(setAuthor);
 
-setQuotes.innerText = quotes[quotesNum].quote;
+setQuotes.innerText = `${quotes[quotesNum].quote} `;
 setAuthor.innerText = quotes[quotesNum].author;

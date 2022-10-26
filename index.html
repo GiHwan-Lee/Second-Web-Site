@@ -12,42 +12,45 @@
       type="image/x-icon"
     />
   </head>
-  <body>
-    <div id="background"></div>
-    <span id="clock"></span>
-    <form id="form">
-      <div id="inputBox">
-        <input
-          id="greetingBox"
-          required
-          maxlength="15"
-          type="text"
-          placeholder="Type your name"
-        />
-        <button>Log In</button>
-        <h2 id="h2"></h2>
-      </div>
-    </form>
-    <div id="todo-div">
-      <form id="todo-form">
-        <input
-          id="todo-input"
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
+  <body id="body">
+    <div id="container">
+      <div id="background"></div>
+      <span id="clock"></span>
+      <form id="form">
+        <div id="inputBox">
+          <input
+            id="greetingBox"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="Type your name"
+          />
+          <button>Log In</button>
+          <h2 id="h2"></h2>
+        </div>
       </form>
-      <ul id="todo-ul"></ul>
+        <div id="todo-div">
+          <form id="todo-form">
+            <input
+            id="todo-input"
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+            />
+          </form>
+          <ul id="todo-ul"></ul>
+        </div>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <script src="JS/background.js"></script>
+      <script src="JS/quotes.js"></script>
+      <script src="JS/clock.js"></script>
+      <script src="JS/greeting.js"></script>
+      <script src="JS/weather.js"></script>
+      <script src="JS/todo.js"></script>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
-    <script src="JS/background.js"></script>
-    <script src="JS/quotes.js"></script>
-    <script src="JS/clock.js"></script>
-    <script src="JS/greeting.js"></script>
-    <script src="JS/weather.js"></script>
-    <script src="JS/todo.js"></script>
   </body>
 </html>
