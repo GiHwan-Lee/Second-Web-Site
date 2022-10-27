@@ -2,12 +2,17 @@
   display: none;
 }
 
-#a {
+#background-img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* responsive height */
+}
+
+#container {
+  position: relative;
+  text-align: center;
 }
 
 #clock {
@@ -35,13 +40,48 @@
   color: aliceblue;
 }
 
+#greetingBox::placeholder {
+  color: white;
+}
+
 #h2 {
   color: aliceblue;
   font-size: 35px;
 }
 
-#greetingBox::placeholder {
+#todo-ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.todo-Li {
+  padding-bottom: 3px;
+}
+
+#todo-div {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#todo-input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background: transparent;
+  color: aliceblue;
+  margin-bottom: 3px;
+}
+
+#todo-input::placeholder {
   color: white;
+}
+
+.todo-text {
+  color: aliceblue;
 }
 
 #weather {
@@ -62,41 +102,15 @@
 
 #body {
   display: block;
-  margin-top: -18px;
+  margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
 }
 
-#todo-ul {
-  list-style-type: none;
-}
-
-#todo-ul {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-#todo-div {
+#search {
   position: absolute;
-  top: 55%;
-  left: 43%;
-}
-
-#todo-input {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
-  background: transparent;
-  color: aliceblue;
-  margin-bottom: 3px;
-}
-
-#todo-input::placeholder {
-  color: white;
-}
-
-.todo-text {
-  color: aliceblue;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

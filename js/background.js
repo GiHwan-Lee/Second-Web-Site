@@ -9,10 +9,9 @@ const images = [
 const randomImg = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
-document.body.appendChild(bgImage);
+const container = document.querySelector("#container");
+container.appendChild(bgImage);
 
-bgImage.id = "a";
-
-document.getElementById("a").width = "1000";
+bgImage.id = "background-img";
 
 bgImage.src = `${randomImg}`;

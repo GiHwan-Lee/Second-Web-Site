@@ -28,6 +28,7 @@ function forId(userTodo) {
 
 function painting(todoObject) {
   const todoLI = document.createElement("li");
+  todoLI.classList = "todo-Li";
   const todoSpan = document.createElement("span");
   todoSpan.classList = "todo-text";
   const todoButton = document.createElement("button");
