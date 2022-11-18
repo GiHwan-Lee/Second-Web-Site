@@ -9,4 +9,5 @@ function simpleClock() {
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-setInterval(simpleClock, 200);
+simpleClock();
+setInterval(simpleClock, 1000);
